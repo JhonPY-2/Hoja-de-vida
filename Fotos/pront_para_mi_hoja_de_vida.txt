@@ -1,0 +1,23 @@
+Actúa como un diseñador UI/UX especializado en portfolios y hojas de vida para desarrolladores tech. Tengo el contenido de mi CV ya redactado en HTML y CSS (te lo voy a pegar abajo) pero el diseño visual es muy básico y quiero que lo rediseñes completamente para que se vea moderno, profesional y con identidad de desarrollador — no como una plantilla de Word.
+
+Estilo que busco:
+
+Diseño tipo "developer portfolio" — inspirado en interfaces de herramientas como GitHub, Linear o Vercel: minimalista, con buen espaciado, tipografía moderna y una paleta de colores oscura o con un acento de color fuerte (verde, azul eléctrico o morado)
+Que se sienta como el CV de alguien que realmente construye productos digitales, no una hoja de Word convertida a HTML
+Tarjetas (cards) con sombras sutiles para separar secciones, no solo líneas divisorias
+Íconos modernos (usa SVG inline o una librería como Lucide/Feather icons, no emojis) para contacto, habilidades y secciones
+Una barra de progreso, chips o badges para mostrar el stack tecnológico (React, Node.js, PostgreSQL, etc.) en vez de listas simples
+Tipografía: usa una fuente moderna tipo "Inter", "Space Grotesk" o "JetBrains Mono" para detalles técnicos (como los nombres de tecnologías) mezclada con una fuente limpia para el cuerpo
+Que sea responsive (se vea bien en celular y en PC)
+Debe verse bien tanto en pantalla como al exportarlo a PDF para imprimir/enviar a una empresa
+
+Restricciones importantes:
+
+Todo el código debe ser HTML y CSS puro (sin frameworks como Tailwind si no lo indico, o dime si prefieres que use Tailwind vía CDN)
+No inventes contenido nuevo — usa exactamente el texto, logros y datos que te voy a pegar
+Mantén la estructura de información (perfil, proyecto destacado, experiencia, educación, skills, certificaciones)
+El código debe quedar en un solo archivo HTML con CSS embebido o en archivo separado, listo para abrir en el navegador
+
+Aquí está mi contenido actual en HTML y CSS:
+
+[PEGA AQUÍ TU index.html Y styles.css COMPLETOS]

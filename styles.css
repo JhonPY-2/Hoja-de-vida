@@ -1,94 +1,330 @@
+/* ============================================================
+   Hoja de Vida — Jhon Fredy Osuna Herrera
+   Tema: dark developer portfolio · acento verde (sutil)
+   Complementa a Tailwind (layout) con componentes propios
+   ============================================================ */
+
+:root {
+    --bg: #0a0e14;
+    --panel: #10151d;
+    --line: rgba(148, 163, 184, 0.12);
+    --accent: #22c55e;
+    --accent-border: rgba(34, 197, 94, 0.16);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(ellipse 60% 40% at 50% -10%, rgba(34, 197, 94, 0.035), transparent),
+        radial-gradient(ellipse 50% 35% at 100% 100%, rgba(34, 197, 94, 0.02), transparent);
+    background-attachment: fixed;
 }
 
-.hero-contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0b3c5d;
-    color: white;
-    padding: 30px 70px;
-    gap: 40px;
-
+::selection {
+    background: rgba(34, 197, 94, 0.25);
+    color: #fff;
 }
 
-.informacion-de-perfil h1 {
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1;
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.informacion-de-perfil p {
-    font-size: 18px;
-    margin: 5px 0 0 0;
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
-.informacion-de-perfil ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-
-
-.foto-de-perfil img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.contenedor-cv {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 90%;
-    margin: 40px auto;
-    gap: 40px;
-}
-
-
-.columna-izquierda {
-    flex: 2;
-}
-
-
-.columna-derecha {
-    flex: 1;
-    background-color: #f5f5f5;
-    padding: 20px;
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
     border-radius: 8px;
 }
 
-
-.columna-izquierda h2,
-.columna-derecha h2 {
-    color: #0c3b5a;
-    border-bottom: 2px solid #0c3b5a;
-    padding-bottom: 4px;
-    margin-bottom: 10px;
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
 }
 
-.columna-izquierda p,
-.columna-derecha li {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #222;
+/* ---------- Tarjetas ---------- */
+.card {
+    position: relative;
+    background-color: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
 }
 
-
-.columna-derecha ul {
-    list-style: none;
-    padding-left: 0;
+@media (min-width: 640px) {
+    .card {
+        padding: 1.75rem;
+    }
 }
 
-.columna-derecha li {
-    margin-bottom: 6px;
+.card-highlight {
+    border-color: rgba(34, 197, 94, 0.18);
 }
 
+.hero-line {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.3), transparent);
+}
 
-.fecha {
-    font-size: 14px;
-    color: gray;
+/* ---------- Títulos de sección ---------- */
+.sec-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1.1rem;
+}
+
+.icon-box {
+    width: 2rem;
+    height: 2rem;
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.55rem;
+    background: rgba(34, 197, 94, 0.06);
+    border: 1px solid var(--accent-border);
+    color: #4ade80;
+}
+
+.icon-box svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* ---------- Contacto ---------- */
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.contact-link svg {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+    color: #64748b;
+    transition: color 0.15s ease;
+}
+
+.contact-link:hover {
+    color: #4ade80;
+}
+
+.contact-link:hover svg {
+    color: #4ade80;
+}
+
+/* ---------- Chips / badges ---------- */
+.chip {
+    display: inline-block;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    padding: 0.28rem 0.6rem;
+    border-radius: 0.45rem;
+    white-space: nowrap;
+    background: rgba(148, 163, 184, 0.06);
+    color: #cbd5e1;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.chip-green {
+    background: rgba(34, 197, 94, 0.08);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.22);
+}
+
+.chip-meta {
+    background: transparent;
+    color: #94a3b8;
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+/* ---------- Etiquetas de grupo (skills) ---------- */
+.group-label {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.group-label:first-child,
+.card-highlight .group-label:first-of-type {
+    margin-top: 0;
+}
+
+/* ---------- Lista de logros (proyecto) ---------- */
+.ach-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.ach-list svg {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+    margin-top: 0.2rem;
+    color: #4ade80;
+}
+
+/* ---------- Certificaciones ---------- */
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: #cbd5e1;
+}
+
+.cert-item svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex: none;
+    color: #64748b;
+}
+
+/* ---------- Educación ---------- */
+.edu-item {
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px dashed var(--line);
+}
+
+.edu-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+/* ---------- Barra de progreso (idiomas) ---------- */
+.bar {
+    height: 6px;
+    border-radius: 9999px;
+    background: #1e293b;
+    overflow: hidden;
+}
+
+.bar>span {
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+    opacity: 0.85;
+}
+
+/* ============================================================
+   IMPRESIÓN / EXPORTAR A PDF
+   ============================================================ */
+@media print {
+    @page {
+        margin: 12mm;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body {
+        background: #fff !important;
+        background-image: none !important;
+        color: #1f2937 !important;
+    }
+
+    [class*="text-slate-"] {
+        color: #374151 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    .text-white {
+        color: #111827 !important;
+    }
+
+    .card {
+        background: #fff !important;
+        border: 1px solid #d1d5db !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        border-radius: 0.5rem;
+    }
+
+    .card-highlight {
+        border: 1.5px solid #bbf7d0 !important;
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .icon-box {
+        background: #f0fdf4 !important;
+        border-color: #d1fae5 !important;
+        color: #15803d !important;
+    }
+
+    .chip {
+        background: #f3f4f6 !important;
+        color: #374151 !important;
+        border-color: #e5e7eb !important;
+    }
+
+    .chip-green {
+        background: #ecfdf5 !important;
+        color: #166534 !important;
+        border-color: #bbf7d0 !important;
+    }
+
+    .chip-meta {
+        background: #f9fafb !important;
+        color: #374151 !important;
+        border-color: #d1d5db !important;
+    }
+
+    .contact-link,
+    .cert-item {
+        color: #374151 !important;
+    }
+
+    .contact-link svg,
+    .cert-item svg {
+        color: #4b5563 !important;
+    }
+
+    .ach-list svg {
+        color: #15803d !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    img {
+        max-width: 160px !important;
+    }
 }

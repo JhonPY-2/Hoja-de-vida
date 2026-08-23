@@ -4,188 +4,506 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hoja de Vida - Jhon Osuna</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Hoja de Vida - Jhon Fredy Osuna Herrera | Desarrollador Full Stack Junior</title>
+    <meta name="description"
+        content="Desarrollador Full Stack Junior con React.js, Node.js, PostgreSQL y Scrum. Líder técnico del e-commerce Granova, en producción. Ibagué, Colombia." />
+    <meta name="keywords"
+        content="desarrollador frontend junior, desarrollador full stack junior, React.js, Tailwind CSS, Vite, Node.js, Express.js, REST API, PostgreSQL, Supabase, SQL, JWT, OAuth, Google One Tap, PWA, Progressive Web App, Git, GitHub, Jira, Scrum, Scrum Master, e-commerce, dashboard, Recharts, Vercel, Railway, Postman, Ibagué, Colombia" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#0a0e14',
+                        panel: '#10151d',
+                        accent: '#22c55e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+                    },
+                    boxShadow: {
+                        glow: '0 0 18px rgba(34, 197, 94, .10)',
+                    },
+                },
+            },
+        };
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <header class="seccion-de-perfil">
-        <div class="hero-contenido">
-            <div class="informacion-de-perfil">
-                <h1>JHON OSUNA</h1>
-                <p class="subtitulos">Desarrollador Web frontend  Junior</p>
-                <ul class="contact">
-                    <li>📞 +57 322 451 7214</li>
-                    <li>✉️ jhon.osuna08@gmail.com</li>
-                    <li>🔗 linkedin.com/in/Jhon-osuna</li>
-                    <li>💻 github.com/JhonO</li>
-                    <li>📍 Ibagué, Tolima</li>
-                </ul>
+<body class="font-sans bg-base text-slate-300 antialiased">
+    <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 py-8 lg:py-12">
+
+        <!-- ================= HERO ================= -->
+        <header class="card relative overflow-hidden mb-6">
+            <div class="hero-line"></div>
+            <div class="flex flex-col-reverse sm:flex-row items-center sm:items-start sm:justify-between gap-6">
+                <div class="text-center sm:text-left">
+                    <p class="font-mono text-[11px] uppercase tracking-[0.35em] text-accent mb-2">&lt;Desarrollador
+                        Full Stack /&gt;</p>
+                    <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-white tracking-tight leading-tight">
+                        JHON FREDY OSUNA HERRERA</h1>
+                    <p class="mt-1.5 text-lg text-slate-400">Desarrollador Frontend / Full Stack Junior</p>
+
+                    <ul class="mt-6 grid gap-2.5 justify-center sm:justify-start text-sm sm:text-[15px] w-fit mx-auto sm:mx-0">
+                        <li>
+                            <a href="tel:+573224517214" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                +57 322 451 7214
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:jhon.osuna08@gmail.com" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                jhon.osuna08@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/Jhon-osuna" target="_blank" rel="noopener"
+                                class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                linkedin.com/in/Jhon-osuna
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JhonPY-2" target="_blank" rel="noopener" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                github.com/JhonPY-2
+                            </a>
+                        </li>
+                        <li>
+                            <span class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Ibagué, Tolima
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shrink-0 pt-2 sm:pt-0">
+                    <img src="Fotos/Fotos/foto-hoja-de-vida.jpeg" alt="Foto de perfil de Jhon Fredy Osuna Herrera"
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover ring-1 ring-accent/30 shadow-glow">
+                </div>
             </div>
+        </header>
 
-            <div class="foto-de-perfil">
-                <img src="Fotos/Fotos/foto-hoja-de-vida.jpeg" alt="Foto de perfil">
-            </div>
-        </div>
+        <!-- ================= CONTENIDO ================= -->
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
 
-    </header>
-    <main class="contenedor-cv">
+            <!-- COLUMNA PRINCIPAL -->
+            <section class="lg:col-span-2 space-y-6">
 
-
-        <section class="columna-izquierda">
-            <div>
-                <h2>SUMMARY</h2>
-                <p>
-                    Soy un desarrollador web junior con pasión por crear soluciones digitales funcionales y atractivas.
-                    Me gusta aprender nuevas tecnologías y mejorar mis habilidades cada día.
-                    Busco crecer profesionalmente en un entorno donde pueda aportar y seguir aprendiendo.
-                </p>
-            </div>
-
-            <div>
-                <h2> Freelance</h2>
-                <h3>Servicio Social</h3>
-                <p>2024 - Presente | Ibagué - Tolima</p>
-                <p>
-                    Este proyecto es una página web creada para facilitar el registro y control de las horas de servicio
-                    social en un colegio. Permite que los estudiantes registren sus actividades y los coordinadores
-                    supervisen el cumplimiento de las horas de forma más rápida y organizada, evitando procesos manuales
-                    y mejorando la gestión general.
-                </p>
-            </div>
-
-            <div>
-                <h2>EXPERIENCE</h2>
-                <h3>Project experience</h3>
-                <p>Proyecto personal y colaboraciones freelance</p>
-                <p>2025 - Presente</p>
-                <p>
-                    Colaboré en el desarrollo de una página web para la gestión de horas de servicio social en un
-                    colegio. Participé en el diseño del frontend con HTML, CSS y JavaScript, y en la conexión con la
-                    base de datos usando PHP y MySQL. Durante el proyecto, aprendí a trabajar con formularios dinámicos,
-                    validación de datos y CRUD (crear, leer, actualizar y eliminar) de registros, mejorando mis
-                    habilidades en desarrollo web fullstack.
-                <h2>EDUCATION</h2>
-
-                <div>
-                    <h3>Tecnología en Análisis y Desarrollo de Software</h3>
-                    <p><strong>SENA</strong></p>
-                    <p>📅 2025 - Presente</p>
-                    <p>📍 Ibagué - Tolima</p>
-                    <p>
-                        Formación enfocada en el desarrollo de aplicaciones web y móviles,
-                        manejo de bases de datos y metodologías ágiles.
+                <!-- PERFIL PROFESIONAL -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </span>
+                        Perfil Profesional
+                    </h2>
+                    <p class="leading-relaxed text-slate-300">
+                        Desarrollador Web Full Stack Junior con experiencia comprobada liderando técnicamente un equipo
+                        de 4 personas en el diseño, desarrollo y despliegue en producción de una plataforma e-commerce
+                        real. Dominio de React.js y Node.js con arquitectura REST, bases de datos PostgreSQL y
+                        autenticación segura con JWT y OAuth. Organizo el trabajo del equipo bajo metodología Scrum como
+                        Scrum Master, garantizando entregas continuas, calidad de código con Git y GitHub, y foco en
+                        resultados medibles.
                     </p>
-                </div>
+                </article>
 
-                <div>
-                    <h3>Bachiller Técnico en Sistemas</h3>
-                    <p><strong>Institución Educativa Técnica de Ibagué</strong></p>
-                    <p>📅 2023 - 2025</p>
-                    <p>📍 Ibagué - Tolima</p>
-                    <p>
-                        Educación media con énfasis en sistemas e informática, incluyendo
-                        fundamentos de programación, mantenimiento de equipos y redes.
+                <!-- PROYECTO DESTACADO -->
+                <article class="card card-highlight">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </span>
+                        Proyecto Destacado
+                    </h2>
+
+                    <h3 class="text-lg font-bold text-white">Granova — Plataforma e-commerce de café colombiano</h3>
+                    <p class="text-accent font-semibold mt-0.5">Líder Técnico del Equipo de Desarrollo</p>
+
+                    <div class="flex flex-wrap gap-2 mt-3 mb-4">
+                        <span class="chip chip-meta">2025 - Presente</span>
+                        <span class="chip chip-green">En producción</span>
+                        <span class="chip chip-meta">Ibagué, Tolima</span>
+                    </div>
+
+                    <p class="leading-relaxed text-slate-300">
+                        E-commerce completo para la venta de café colombiano con tienda virtual, gestión de inventario,
+                        trazabilidad del producto, panel administrativo y recomendaciones personalizadas.
                     </p>
-                </div>
-            </div>
-        </section>
 
+                    <ul class="ach-list mt-4 space-y-2.5">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Lideré</strong> técnicamente a un equipo de 4 desarrolladores desde el diseño
+                                inicial hasta el despliegue en producción.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Diseñé</strong> el modelo de base de datos relacional con más de 10 tablas para
+                                ventas, inventario y trazabilidad de café.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Implementé</strong> un sistema de recomendaciones personalizadas basado en las
+                                preferencias del usuario, con integración de IA.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Desarrollé</strong> un dashboard administrativo con visualización de datos en
+                                tiempo real: gráficas de ventas y análisis de clientes.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Implementé</strong> autenticación segura con JWT y OAuth de Google (Google One
+                                Tap).</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Convertí</strong> la aplicación en una PWA instalable con Vite PWA Plugin.</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>Desplegué</strong> frontend y backend en Vercel y Railway.</span>
+                        </li>
+                    </ul>
 
-        <aside class="columna-derecha">
-            <div>
-                <h2>SKILLS</h2>
-                <ul>
-                    <li>HTML / CSS / JavaScript</li>
-                    <li>PHP/ </li>
-                    <li>MySQL/ </li>
-                    <li>Git / GitHub</li>
-                    <li>Angular/</li>
-                </ul>
-            </div>
-
-            <div>
-                <h2>TRAINING / COURSES</h2>
-                <ul>
-                    <li>Curso de Fundamentos de python</li>
-                    <li>Curso de java</li>
-                    <li>Curso de c#</li>
-                    <li>Curso de css</li>
-                    <li>Curso de html</li>
-                </ul>
-            </div>
-            <div>
-
-                <div>
-                    <h2>LANGUAGES</h2>
-
-                    <div>
-                        <div>
-                            <strong>Inglés</strong>
-                            <div>Basico</div>
-                        </div>
-                        <div aria-hidden="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                    <p class="group-label mt-5">Tecnologías</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="chip">React.js</span>
+                        <span class="chip">Tailwind CSS</span>
+                        <span class="chip">Vite</span>
+                        <span class="chip">React Router</span>
+                        <span class="chip">Recharts</span>
+                        <span class="chip">Node.js</span>
+                        <span class="chip">Express.js</span>
+                        <span class="chip">PostgreSQL (Supabase)</span>
+                        <span class="chip">Supabase Storage</span>
+                        <span class="chip">JWT</span>
+                        <span class="chip">OAuth</span>
+                        <span class="chip">PWA</span>
                     </div>
-                </div>
+                </article>
 
-                <div>
-                    <h2>PASSIONS</h2>
+                <!-- GESTIÓN ÁGIL Y LIDERAZGO -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </span>
+                        Gestión Ágil y Liderazgo
+                    </h2>
+                    <h3 class="font-bold text-white">Scrum Master / Líder Técnico — Proyecto Granova</h3>
+                    <p class="leading-relaxed text-slate-300 mt-2">
+                        Organicé la metodología de trabajo del equipo bajo Scrum: dividí el desarrollo en 6 sprints con
+                        historias de usuario y épicas definidas. Gestioné tareas y avances con Jira, facilité ceremonias
+                        de seguimiento y revisé Pull Requests en GitHub asegurando la calidad del código entregado.
+                    </p>
+                </article>
 
-                    <div>
-                        <div>⚡</div>
-                        <div>
-                            <strong>Ciclismo recreativo</strong>
+                <!-- EDUCACIÓN -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                                <path d="M22 10v6" />
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                            </svg>
+                        </span>
+                        Educación
+                    </h2>
+
+                    <div class="edu-item">
+                        <h3 class="font-bold text-white">Tecnólogo en Análisis y Desarrollo de Software (ADSO)</h3>
+                        <p class="text-slate-200 font-semibold text-sm mt-0.5">SENA</p>
+                        <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm text-slate-400">
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-slate-400 shrink-0">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                </svg>
+                                2025 - Presente
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-slate-400 shrink-0">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Ibagué, Tolima
+                            </span>
                         </div>
+                        <p class="text-sm leading-relaxed text-slate-300 mt-2">
+                            Formación enfocada en el desarrollo de aplicaciones web y móviles, diseño y administración
+                            de bases de datos y metodologías ágiles.
+                        </p>
                     </div>
 
-                    <div></div>
-
-                    <div>
-                        <div>⚡</div>
-                        <div>
-                            <strong>Running</strong>
-                            <section>
-                                <h2>FORTALEZAS</h2>
-                                <ul>
-                                    <li><strong>Experiencia comprobada:</strong> Proyectos académicos y personales en
-                                        desarrollo web.</li>
-                                    <li><strong>Pasión por la innovación:</strong> Interés por aprender nuevas
-                                        tecnologías.</li>
-                                    <li><strong>Habilidades técnicas:</strong> Creación de APIs, manejo de bases de
-                                        datos y frameworks modernos.</li>
-                                    <li><strong>Perspectiva equilibrada:</strong> Buen balance entre trabajo y
-                                        crecimiento personal.</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h2>CERTIFICATION</h2>
-                                <ul>
-                                    <li>Scrum Foundation</li>
-                                    <li>Scrum Master</li>
-                                    <li>Scrum Development Team</li>
-                                    <li>Scrum Product Owner</li>
-                                </ul>
-                            </section>
+                    <div class="edu-item !mb-0 !pb-0 border-b-0">
+                        <h3 class="font-bold text-white">Bachiller Técnico en Sistemas</h3>
+                        <p class="text-slate-200 font-semibold text-sm mt-0.5">Institución Educativa Técnica de Ibagué</p>
+                        <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm text-slate-400">
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-slate-400 shrink-0">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                </svg>
+                                2023 - 2025
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 text-slate-400 shrink-0">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Ibagué, Tolima
+                            </span>
                         </div>
+                        <p class="text-sm leading-relaxed text-slate-300 mt-2">
+                            Educación media con énfasis en sistemas e informática: fundamentos de programación,
+                            mantenimiento de equipos y redes.
+                        </p>
                     </div>
-                </div>
+                </article>
+            </section>
 
-            </div>
-        </aside>
+            <!-- COLUMNA LATERAL -->
+            <aside class="space-y-6">
 
-    </main>
+                <!-- HABILIDADES TÉCNICAS -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </span>
+                        Habilidades Técnicas
+                    </h2>
 
+                    <p class="group-label">Frontend</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">React.js</span>
+                        <span class="chip">Tailwind CSS</span>
+                        <span class="chip">Vite</span>
+                        <span class="chip">React Router</span>
+                        <span class="chip">Recharts</span>
+                        <span class="chip">HTML5 / CSS3 / JavaScript</span>
+                    </div>
 
+                    <p class="group-label">Backend</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">Node.js</span>
+                        <span class="chip">Express.js</span>
+                        <span class="chip">Arquitectura REST API</span>
+                    </div>
 
+                    <p class="group-label">Bases de datos</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">PostgreSQL (Supabase)</span>
+                        <span class="chip">SQL avanzado</span>
+                        <span class="chip">Diseño de esquemas relacionales</span>
+                        <span class="chip">Supabase Storage</span>
+                    </div>
+
+                    <p class="group-label">Autenticación y seguridad</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">JWT</span>
+                        <span class="chip">OAuth Google (One Tap)</span>
+                    </div>
+
+                    <p class="group-label">Despliegue y DevOps</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">Vercel</span>
+                        <span class="chip">Railway</span>
+                        <span class="chip">PWA (Vite PWA Plugin)</span>
+                    </div>
+
+                    <p class="group-label">Herramientas</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">Git / GitHub</span>
+                        <span class="chip">Jira</span>
+                        <span class="chip">Postman</span>
+                        <span class="chip">Generación de PDFs</span>
+                        <span class="chip">Integración de IA</span>
+                    </div>
+
+                    <p class="group-label">Metodologías</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="chip">Scrum (Sprints, historias de usuario, épicas)</span>
+                    </div>
+                </article>
+
+                <!-- CERTIFICACIONES -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="6" />
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                            </svg>
+                        </span>
+                        Certificaciones
+                    </h2>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="cert-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Scrum Foundation
+                        </li>
+                        <li class="cert-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Scrum Master
+                        </li>
+                        <li class="cert-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Scrum Development Team
+                        </li>
+                        <li class="cert-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Scrum Product Owner
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- IDIOMAS -->
+                <article class="card">
+                    <h2 class="sec-title">
+                        <span class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m5 8 6 6" />
+                                <path d="m4 14 6-6 2-3" />
+                                <path d="M2 5h12" />
+                                <path d="M7 2h1" />
+                                <path d="m22 22-5-10-5 10" />
+                                <path d="M14 18h6" />
+                            </svg>
+                        </span>
+                        Idiomas
+                    </h2>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-white">Inglés</span>
+                        <span class="chip">Intermedio</span>
+                    </div>
+                    <div class="bar mt-2.5">
+                        <span></span>
+                    </div>
+                </article>
+            </aside>
+        </main>
+    </div>
 </body>
 
 </html>
