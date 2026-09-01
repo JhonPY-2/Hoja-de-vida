@@ -1,24 +1,47 @@
-Edita mi hoja de vida (index.html del proyecto Hoja-de-vida-master). NO crees secciones/cards nuevas — integra todo dentro de la estructura que ya existe para que no se vea sobrecargada.
+Edita mi hoja de vida (index.html del proyecto Hoja-de-vida-master). NO crees secciones/cards
+nuevas ni cambies la estructura general — solo ajusta los textos dentro de lo que ya existe.
 
-1. METODOLOGÍA DE TRABAJO:
-   Debajo del párrafo de "Perfil Profesional" (dentro de la misma card, sin crear una nueva), agrega una tira compacta de 4-5 pasos en línea (con flechas o separadores, estilo chips), NO un párrafo:
-   Analizo → Busco solución → Diseño → Implemento → Pruebo y documento
+CONTEXTO: No soy "Desarrollador Full Stack", soy aprendiz del Tecnólogo en Análisis y Desarrollo
+de Software (SENA, Centro Industria y Construcción) y estoy buscando empresa para vincularme
+(práctica/etapa productiva). Todo lo que hice y las herramientas que aprendí (Granova, stack
+técnico, logros) se mantienen igual — solo cambia cómo me presento, no lo que hice.
 
-2. HABILIDADES TÉCNICAS - sección "Herramientas" (ya existe, solo agregar chips):
-   - Agregar chip "Docker"
-   - Agregar chip "n8n (automatización)"
-   - Agregar chip "Terminal / búsqueda y depuración en consola"
-   - Agregar chip "Prompt engineering"
+1. HEAD (metadatos / SEO):
+   - <title>: cambiar "Jhon Fredy Osuna Herrera | Desarrollador Full Stack Junior" por
+     "Jhon Fredy Osuna Herrera | Aprendiz Tecnólogo ADSO - SENA"
+   - meta description: cambiar "Desarrollador Full Stack Junior con React.js, Node.js, PostgreSQL
+     y Scrum. Líder técnico del e-commerce Granova, en producción. Ibagué, Colombia." por:
+     "Aprendiz de Tecnólogo en Análisis y Desarrollo de Software (SENA, Centro Industria y
+     Construcción) buscando empresa para práctica/etapa productiva. Experiencia liderando el
+     e-commerce Granova (React.js, Node.js, PostgreSQL, Scrum). Ibagué, Colombia."
+   - meta keywords: agrega "aprendiz ADSO", "SENA", "etapa productiva", "practicante desarrollo
+     de software", "estudiante análisis y desarrollo de software" — deja las keywords técnicas
+     que ya están, solo suma estas.
 
-3. CORREGIR errores existentes:
-   - En "Bases de datos": cambiar el chip "SQL avanzado" por "SQL intermedio"
-   - Recharts aparece duplicado (en Proyecto Destacado y en Habilidades Técnicas > Frontend). Déjalo solo como está (no lo quites, sí lo uso en Granova para las gráficas del dashboard), pero no lo dupliques innecesariamente ni lo describas como "dominio avanzado" en ningún texto.
+2. HERO (encabezado principal):
+   - Subtítulo debajo del nombre: cambiar "Desarrollador Full Stack" por "Aprendiz Tecnólogo en
+     Análisis y Desarrollo de Software · SENA, Centro Industria y Construcción"
+   - Párrafo de perfil: cambiar "Desarrollo y despliegue en producción de e-commerce con
+     React.js, Node.js, PostgreSQL y JWT/OAuth. Aplico Scrum como Scrum Master con calidad
+     garantizada por Git y GitHub." por algo que refleje el ciclo/metodología del tecnólogo en
+     vez de sonar a experiencia laboral ya consolidada, por ejemplo:
+     "Aplico el ciclo de desarrollo de software — análisis, diseño, construcción, pruebas y
+     documentación — con React.js, Node.js, PostgreSQL y JWT/OAuth, siguiendo metodologías
+     ágiles como Scrum (Scrum Master) y control de versiones con Git y GitHub."
+     (Puedes ajustar la redacción, pero debe sonar a competencias que aplico como aprendiz, no
+     a "ya desplegué esto en producción como si fuera mi trabajo".)
+   - Opcional: agrega una sola línea corta debajo de ese párrafo indicando que busco vinculación
+     con una empresa para mi etapa productiva/práctica. Sin crear una card nueva.
 
-4. CERTIFICACIONES (sección ya existente, solo agregar un <li> más al final de la lista):
-   Voy a subir la imagen del certificado en: certificados/certificado_ia_mouredev_bigschool.jpg
-   Si esa carpeta no existe, créala.
-   Agrega el siguiente item a la lista de certificaciones:
-   "Certificado de Iniciación al Desarrollo con IA — mouredev / BIG school (26/06/2026)"
-   No hace falta mostrar la imagen dentro del CV (la sección de certificaciones es solo texto, igual que las demás); la imagen es solo de referencia/soporte del certificado.
+3. SECCIÓN "PROYECTO DESTACADO":
+   - Cambia el título de la sección "Proyecto Destacado" por "Proyecto Productivo" (si no encaja
+     bien con el resto del diseño, usa "Proyecto Formativo SENA" como alternativa).
+   - Todo el contenido de adentro (título del proyecto, rol "Líder Técnico del Equipo de
+     Desarrollo", fechas, badges, descripción y lista de logros) se queda exactamente igual, no
+     lo reescribas.
 
-5. NO crees tarjetas/secciones nuevas. Todo debe integrarse en las secciones existentes para mantener el diseño de una sola página, limpio y sin saturar.
+4. RESTO DEL DOCUMENTO (Otro Proyecto, Educación, Habilidades Técnicas, Certificaciones, Idiomas):
+   - No cambies nada de contenido ni de estructura, solo las 3 secciones anteriores.
+
+5. NO modifiques styles.css. El estilo de la card (borde verde, ícono) no depende del nombre
+   de la sección y debe quedar exactamente igual.
