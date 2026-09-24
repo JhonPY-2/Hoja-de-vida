@@ -389,6 +389,11 @@ body {
         margin-top: 0.3rem !important;
     }
 
+    section > [class*="space-y"] > .card + .card,
+    section > [class*="space-y"] > div + div {
+        margin-top: 0.4rem !important;
+    }
+
     header p.mt-1,
     header p.mt-2 {
         font-size: 0.9rem !important;
