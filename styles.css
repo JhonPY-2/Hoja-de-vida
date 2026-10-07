@@ -235,7 +235,7 @@ body {
 @media print {
     @page {
         size: A4;
-        margin: 10mm;
+        margin: 8mm;
     }
 
     * {
@@ -248,8 +248,8 @@ body {
         background: #fff !important;
         background-image: none !important;
         color: #1f2937 !important;
-        font-size: 11.5px !important;
-        line-height: 1.4 !important;
+        font-size: 10.5px !important;
+        line-height: 1.35 !important;
     }
 
     body > div {
@@ -272,28 +272,23 @@ body {
     }
 
     h1 {
-        font-size: 25px !important;
+        font-size: 24px !important;
     }
 
     main {
-        display: block !important;
+        display: grid !important;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem !important;
     }
 
     section {
-        display: block !important;
-        width: 100% !important;
-        margin-bottom: 0.55rem !important;
+        margin: 0 !important;
+        gap: 0.5rem !important;
     }
 
     aside {
-        display: block !important;
-        width: 100% !important;
-        break-before: page;
-        page-break-before: always;
-    }
-
-    aside > .card + .card {
-        margin-top: 0.55rem !important;
+        margin: 0 !important;
+        gap: 0.5rem !important;
     }
 
     .card {
@@ -303,11 +298,11 @@ body {
         break-inside: avoid;
         page-break-inside: avoid;
         border-radius: 0.4rem;
-        padding: 0.8rem 0.9rem !important;
+        padding: 0.6rem 0.7rem !important;
     }
 
     header.card {
-        margin-bottom: 0.55rem !important;
+        margin-bottom: 0.5rem !important;
     }
 
     .card-highlight {
@@ -319,17 +314,24 @@ body {
     }
 
     .icon-box {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
         background: #f0fdf4 !important;
         border-color: #d1fae5 !important;
         color: #15803d !important;
+    }
+
+    .icon-box svg {
+        width: 0.8rem !important;
+        height: 0.8rem !important;
     }
 
     .chip {
         background: #f3f4f6 !important;
         color: #374151 !important;
         border-color: #e5e7eb !important;
-        font-size: 0.68rem !important;
-        padding: 0.18rem 0.45rem !important;
+        font-size: 0.6rem !important;
+        padding: 0.15rem 0.4rem !important;
     }
 
     .chip-green {
@@ -365,38 +367,59 @@ body {
 
     .cert-thumb img {
         max-width: 100% !important;
-        max-height: none !important;
+        max-height: 95px !important;
         border: 1px solid #d1d5db !important;
     }
 
     header img {
-        max-width: 110px !important;
+        max-width: 90px !important;
+        max-height: 90px !important;
     }
 
     .group-label {
-        font-size: 0.6rem !important;
-        margin-top: 0.5rem !important;
-        margin-bottom: 0.3rem !important;
+        font-size: 0.55rem !important;
+        margin-top: 0.4rem !important;
+        margin-bottom: 0.25rem !important;
     }
 
     .sec-title {
-        font-size: 0.7rem !important;
-        margin-bottom: 0.5rem !important;
+        font-size: 0.65rem !important;
+        margin-bottom: 0.4rem !important;
     }
 
     ul[class*="space-y"] > li + li,
     .ach-list > li + li {
-        margin-top: 0.3rem !important;
+        margin-top: 0.2rem !important;
     }
 
     section > [class*="space-y"] > .card + .card,
     section > [class*="space-y"] > div + div {
-        margin-top: 0.4rem !important;
+        margin-top: 0.35rem !important;
+    }
+
+    section > .space-y-6 > div + div {
+        margin-top: 0.35rem !important;
+    }
+
+    .ach-list {
+        margin-top: 0.35rem !important;
+    }
+
+    article > p.mt-3 {
+        margin-top: 0.3rem !important;
+    }
+
+    article h3.text-lg {
+        font-size: 1rem !important;
     }
 
     header p.mt-1,
     header p.mt-2 {
-        font-size: 0.9rem !important;
-        margin-top: 0.25rem !important;
+        font-size: 0.85rem !important;
+        margin-top: 0.2rem !important;
+    }
+
+    header ul {
+        gap: 0.1rem 0.5rem !important;
     }
 }

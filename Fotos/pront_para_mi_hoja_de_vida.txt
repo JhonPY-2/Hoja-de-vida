@@ -1,12 +1,13 @@
-Abre index.html. Busca este bloque dentro de la sección Educación:
+Abre index.html. Dentro de la sección "Habilidades Técnicas" (article con el ícono de flechas), haz estos ajustes puntuales, manteniendo el mismo estilo de <span class="chip">:
 
-<h3 class="font-bold text-white">Bachiller Técnico en Análisis y Desarrollo de Software</h3>
-                                <span class="chip chip-meta shrink-0">2023 - 2024</span>
-                            </div>
-                            <p class="text-slate-200 font-semibold text-sm mt-0.5">Institución Educativa Francisco de Paula Santander · Ibagué, Tolima</p>
+1. En el grupo "Backend / Bases de datos", agrega un chip nuevo "MongoDB" justo después del chip "MySQL".
 
-Justo después de esa línea de <p> (antes del cierre del </div> que la contiene), agrega esta nueva línea, con el mismo estilo de texto secundario que ya usa el resto del documento:
+2. En el grupo "Frontend", agrega un chip nuevo "Next.js" justo después del chip "React.js".
 
-<p class="text-slate-400 text-sm mt-0.5">Formación técnica con énfasis en programación en Python: lógica, estructuras de datos y desarrollo de aplicaciones.</p>
+3. En el grupo "Herramientas / DevOps", agrega dos chips nuevos: "GitHub Actions (CI/CD)" justo después de "Git / GitHub", y agrega también "FastAPI" en el grupo de "Lenguajes de programación" — no, corrección: crea un chip "FastAPI" en el mismo grupo "Backend / Bases de datos", después de "MongoDB".
 
-No toques ninguna otra parte del archivo. Confírmame el diff cuando termines.
+No toques ninguna otra parte del archivo. Después de aplicar los cambios, revisa que la hoja siga cabiendo en 1 sola página al imprimir (@media print) y ajusta si hace falta. Confírmame el diff cuando termines.
+
+
+
+Calle 60 con avenida miro lindo
