@@ -187,9 +187,15 @@ body {
 /* ---------- Certificaciones ---------- */
 .cert-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 0.6rem;
     color: #cbd5e1;
+}
+
+.cert-item .cert-thumb {
+    flex-basis: 100%;
+    margin-top: 0.4rem;
 }
 
 .cert-item svg {
@@ -367,7 +373,7 @@ body {
 
     .cert-thumb img {
         max-width: 100% !important;
-        max-height: 95px !important;
+        max-height: 60px !important;
         border: 1px solid #d1d5db !important;
     }
 
